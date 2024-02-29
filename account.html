@@ -1,0 +1,27 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Fetch and insert the navbar
+            fetch("navbar.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("navbar-container").innerHTML = data;
+                });
+        });
+    </script>
+</head>
+<body>
+
+<!-- Container for the navbar -->
+<div id="navbar-container"></div>
+
+<!-- The rest of your home page content goes here -->
+
+</body>
+</html>
