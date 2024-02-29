@@ -17,10 +17,23 @@
         <link rel="stylesheet" href="styles/homepage.css">
         <link rel="stylesheet/less" type="text/css" href="styles/homepage.less" >
         <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+      
+        <!-- Navbar -->
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Fetch and insert the navbar
+            fetch("navbar.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("navbar-container").innerHTML = data;
+                });
+        });
+        </script>
 
     
     </head>  
     <body>
+        <div id="navbar-container"></div>
         <div class="container pt-5">
             <h1>Place a Bet</h1>
             <div class="btn-group btn-group-lg" role="group" aria-label="Basic radio toggle button group">
