@@ -34,18 +34,265 @@
     </head>  
     <body>
         <div id="navbar-container"></div>
-        <div class="container pt-5">
-            <h1>Place a Bet</h1>
-            <div class="btn-group btn-group-lg" role="group" aria-label="Basic radio toggle button group">
+        <div class="container">
+            <div id="home-header" class="p-4 pt-5">
+                <h1 class="pe-5">Place a Bet</h1>
+                <div class="btn-group btn-group-lg nfl-button" role="group" aria-label="Basic radio toggle button group">
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+                <label class="btn btn-outline-dark" for="btnradio1">NBA</label>
               
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+                <label class="btn btn-outline-dark" for="btnradio2">NFL</label>
               
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
+                <input type="radio" class="btn-check mlb-button" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-dark" for="btnradio3">MLB</label>
               </div>
+            </div>
+        </div>
+        <div class="container" id="bet-container">
+            <div class="container">
+                <ul class="bet-list NBA">
+                    <li>
+                        <div class="card">
+                            <div class="bet-card card-body">
+                                <div>
+                                    <h4>Golden State Warriors</h4>
+                                    <button type="button" class="btn btn-primary">+500</button>
+                                </div>
+                                <div>
+                                    <h4>Houston Rockets</h4>
+                                    <button type="button" class="btn btn-primary">-500</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="bet-card card-body">
+                                <div>
+                                    <h4>New Orleans Pelicans</h4>
+                                    <button type="button" class="btn btn-primary">+300</button>
+                                </div>
+                                <div>
+                                    <h4>Sacramento Kings</h4>
+                                    <button type="button" class="btn btn-primary">-250</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="bet-card card-body">
+                                <div>
+                                    <h4>Miami Heat</h4>
+                                    <button type="button" class="btn btn-primary">+100</button>
+                                </div>
+                                <div>
+                                    <h4>Boston Celtics</h4>
+                                    <button type="button" class="btn btn-primary">-110</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="bet-card card-body">
+                                <div>
+                                    <h4>Los Angeles Lakers</h4>
+                                    <button type="button" class="btn btn-primary">+500</button>
+                                </div>
+                                <div>
+                                    <h4>New York Knicks</h4>
+                                    <button type="button" class="btn btn-primary">-500</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="bet-card card-body">
+                                <div>
+                                    <h4>Washington Wizards</h4>
+                                    <button type="button" class="btn btn-primary">+200</button>
+                                </div>
+                                <div>
+                                    <h4>Indiana Pacers</h4>
+                                    <button type="button" class="btn btn-primary">-200</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="bet-list NFL">
+                    <li>
+                        <div class="card">
+                            <div class="bet-card card-body">
+                                <div>
+                                    <h4>Las Vegas Raiders</h4>
+                                    <button type="button" class="btn btn-primary">+500</button>
+                                </div>
+                                <div>
+                                    <h4>Kansas City Chiefs</h4>
+                                    <button type="button" class="btn btn-primary">-500</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="bet-card card-body">
+                                <div>
+                                    <h4>New Orleans Pelicans</h4>
+                                    <button type="button" class="btn btn-primary">+300</button>
+                                </div>
+                                <div>
+                                    <h4>Sacramento Kings</h4>
+                                    <button type="button" class="btn btn-primary">-250</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="bet-card card-body">
+                                <div>
+                                    <h4>Miami Heat</h4>
+                                    <button type="button" class="btn btn-primary">+100</button>
+                                </div>
+                                <div>
+                                    <h4>Boston Celtics</h4>
+                                    <button type="button" class="btn btn-primary">-110</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="bet-card card-body">
+                                <div>
+                                    <h4>Los Angeles Lakers</h4>
+                                    <button type="button" class="btn btn-primary">+500</button>
+                                </div>
+                                <div>
+                                    <h4>New York Knicks</h4>
+                                    <button type="button" class="btn btn-primary">-500</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="bet-card card-body">
+                                <div>
+                                    <h4>Washington Wizards</h4>
+                                    <button type="button" class="btn btn-primary">+200</button>
+                                </div>
+                                <div>
+                                    <h4>Indiana Pacers</h4>
+                                    <button type="button" class="btn btn-primary">-200</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="bet-list MLB">
+                    <li>
+                        <div class="card">
+                            <div class="bet-card card-body">
+                                <div>
+                                    <h4>San Francisco Giants</h4>
+                                    <button type="button" class="btn btn-primary">+500</button>
+                                </div>
+                                <div>
+                                    <h4>Oakland A's</h4>
+                                    <button type="button" class="btn btn-primary">-500</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="bet-card card-body">
+                                <div>
+                                    <h4>New Orleans Pelicans</h4>
+                                    <button type="button" class="btn btn-primary">+300</button>
+                                </div>
+                                <div>
+                                    <h4>Sacramento Kings</h4>
+                                    <button type="button" class="btn btn-primary">-250</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="bet-card card-body">
+                                <div>
+                                    <h4>Miami Heat</h4>
+                                    <button type="button" class="btn btn-primary">+100</button>
+                                </div>
+                                <div>
+                                    <h4>Boston Celtics</h4>
+                                    <button type="button" class="btn btn-primary">-110</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="bet-card card-body">
+                                <div>
+                                    <h4>Los Angeles Lakers</h4>
+                                    <button type="button" class="btn btn-primary">+500</button>
+                                </div>
+                                <div>
+                                    <h4>New York Knicks</h4>
+                                    <button type="button" class="btn btn-primary">-500</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="bet-card card-body">
+                                <div>
+                                    <h4>Washington Wizards</h4>
+                                    <button type="button" class="btn btn-primary">+200</button>
+                                </div>
+                                <div>
+                                    <h4>Indiana Pacers</h4>
+                                    <button type="button" class="btn btn-primary">-200</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="me-4" style="border: solid; width: 40%; border-radius: 0.375rem;">
+                <div id="placed-header">
+                    <h2 style="margin: 0px">Your Bets</h2>
+                </div>
+                <ul class="bet-list">
+                    <div class="placed-bet">
+                        <div>
+                            <h5>Indiana Pacers</h5>
+                            <strong>-200</strong>
+                        </div>
+                    </div>
+                    <div class="placed-bet">
+                        <div>
+                            <h5>Miami Heat</h5>
+                            <strong>-110</strong>
+                        </div>
+                    </div>
+                    <div class="placed-bet">
+                        <div>
+                            <h5>LV Raiders</h5>
+                            <strong>+500</strong>
+                        </div>
+                    </div>
+                </ul>
+            </div>
         </div>
     </body>
 </html>

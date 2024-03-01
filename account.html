@@ -33,7 +33,6 @@
     body {
         font-family: Arial, sans-serif;
         text-align: center;
-        margin: 50px;
         background-color: #f4f4f4;
     }
 
@@ -41,7 +40,7 @@
         border: 1px solid #ccc;
         padding: 20px;
         max-width: 800px;
-        margin: 0 auto;
+        margin: 50px auto;
         background-color: #fff;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -71,14 +70,11 @@
         <canvas id="balanceChart" width="400" height="200"></canvas>
 
         <script>
-            // Your data for balance over time
             var timeLabels = ["Jan", "Feb", "Mar", "Apr", "May"];
             var balanceData = [100, 150, 240, 395, 500];
         
-            // Get the canvas element
             var ctx = document.getElementById("balanceChart").getContext("2d");
         
-            // Create the line chart
             var myLineChart = new Chart(ctx, {
                 type: 'line',
                 data: {
@@ -91,7 +87,7 @@
                         pointRadius: 5,
                         pointBackgroundColor: 'rgba(75, 192, 192, 1)',
                         fill: false,
-                        cubicInterpolationMode: 'monotone' // Use 'monotone' for straight lines
+                        cubicInterpolationMode: 'monotone' 
                     }]
                 },
                 options: {

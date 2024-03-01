@@ -1,0 +1,96 @@
+@bbred: rgb(159, 182, 193); 
+
+#home-header, #bet-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#placed-header{
+    background-color: @bbred;
+    padding: 1rem;
+}
+
+.bet-list{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    li{
+        padding: 10px;
+
+        .bet-card{
+            display: grid;
+            grid-template-rows: 1fr 1fr; 
+            gap: 10px;
+
+            div{
+                display: flex;
+                justify-content: space-between;
+
+                button{
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+.placed-bet{
+    padding: 5px;
+    margin: 5px;
+    border-bottom: ridge;
+
+    :hover{
+        opacity: 0.6;
+    }
+
+    div{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.NFL, .MLB{
+    display: none;
+}
+
+.nba-button{
+    :focus{
+        .NBA{
+            display: block;
+        }
+        .NFL{
+            display: none;
+        }
+        .MLB{
+            display: none;
+        }
+    }
+}
+.nfl-button{
+    :focus{
+        .NBA{
+            display: none;
+        }
+        .NFL{
+            display: block;
+        }
+        .MLB{
+            display: none;
+        }
+    }
+}
+
+.mlb-button{
+    :focus{
+        .NBA{
+            display: none;
+        }
+        .NFL{
+            display: none;
+        }
+        .MLB{
+            display: block;
+        }
+    }
+}
